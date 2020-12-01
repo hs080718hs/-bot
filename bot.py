@@ -163,12 +163,6 @@ async def on_message(message):
             print(f'{message.author} 님이 잘못된 숫자로 인해 인증을 실패함.')
 
 @client.event
-async def on_message(message): #사용가가 메시지를 입력했을때
-        if message.content == "달빛아 핑":
-        la = client.latency
-        await message.channel.send(f'퐁 {str(round(la * 1000))}ms')
-
-@client.event
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
     game = discord.Game('문이는 열일중 !!')
